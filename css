@@ -1,0 +1,71 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #b9a614;
+}
+
+.hero {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.workouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #b9a614;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#potato_media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#potato {
+    animation-name: move;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0vh);
+    }
+    18% {
+        transform: translateY(10vh);
+    }
+    36% {
+        transform: translateY(20vh);
+    }
+    54% {
+        transform: translateY(30vh);
+    }
+    70% {
+        transform: translateY(40vh);
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
